@@ -20,7 +20,7 @@
     <body>
         <header>
             <div class="container">
-            <!-- <section class="upper-header">
+            <section class="upper-header">
                 <span>
                     <img class="logo" src="./assets/images/SuperFaktura.png" alt="Logo">
                     <img class="pictogram" src="./assets/images/Piktogram_Superfaktura.png" alt="Piktogram ">
@@ -59,7 +59,7 @@
                             <li>
                                 <img src="./assets/images/Avatar.svg" alt="Avatar">
                             </li>
-                            <li class="hamburger-menu">
+                            <li id="burger" class="hamburger-menu">
                                 <img src="./assets/images/Menu.svg" alt="Avatar">
                             </li>
                         </ul>
@@ -68,9 +68,9 @@
                 </section>  
                 
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="company-bar">
+            <section class="company-bar">
                 <span>
                     <div class="circle">
                         <img src="./assets/images/Company.svg" alt="company">
@@ -78,33 +78,8 @@
                     <h3>The Walt Disney Company</h3>
                     <img class="arrow" src="./assets/images/Icons.svg" alt="">
                 </span>
-            </section> -->
-
-            <section class="mobile-menu">
-                <header>
-                    <h2>Menu</h2>
-                    <img src="./assets/images/Add (1).svg" alt="close">
-                </header>
-
-                <div class="search">
-                    <input type="text" placeholder="Vyhľadať faktúru, firmu, kontakt...">
-                    <div class="circle">
-                        <img src="./assets/images/Search.svg" alt="search">
-                    </div>
-                </div>
-
-                    <nav class="mobile-menu-items">
-                        <ul>
-                            <li><a class="menu-item" href="">Prehľady</a></li>
-                            <li><a class="menu-item" data-menu="menu1" href="">Faktúry</a></li>
-                            <li><a class="menu-item" data-menu="menu2" href="">Náklady</a></li>
-                            <li><a class="menu-item" data-menu="menu2" href="">Kontakty</a></li>
-                            <li><a class="menu-item" data-menu="menu3" href="">Nástroje</a></li>
-                            <li><a class="menu-item" data-menu="menu2" href="">Nápoveda</a></li>
-                        </ul>
-                    </nav>
-                
             </section>
+
 
             <section class="menu">
                 <div class="container">
@@ -142,7 +117,33 @@
             </div>
             </section>
 
+            
+            <section id="mobile-menu" class="mobile-menu">
+                <div class="container">
+                <header>
+                    <h2>Menu</h2>
+                    <img id="close-icon" src="./assets/images/Add (1).svg" alt="close">
+                </header>
 
+                <div class="search">
+                    <input type="text" placeholder="Vyhľadať faktúru, firmu, kontakt...">
+                    <div class="circle">
+                        <img src="./assets/images/Search.svg" alt="search">
+                    </div>
+                </div>
+
+                    <nav class="mobile-menu-items">
+                        <ul>
+                            <li><img src="./assets/images/Prehlady.svg" alt="prehlad"><a class="menu-item" href="">Prehľady</a><img class="arrow" src="./assets/images/Icons.svg" alt="arrow"></li>
+                            <li><img src="./assets/images/Faktura.svg" alt="faktura"><a class="menu-item" data-menu="menu1" href="">Faktúry</a><img class="arrow" src="./assets/images/Icons.svg" alt="arrow"></li>
+                            <li><img src="./assets//images/Naklady.svg" alt="naklady"><a class="menu-item" data-menu="menu2" href="">Náklady</a><img class="arrow" src="./assets/images/Icons.svg" alt="arrow"></li>
+                            <li><img src="./assets/images/Contact.svg" alt="contact"><a class="menu-item" data-menu="menu2" href="">Kontakty</a><img class="arrow" src="./assets/images/Icons.svg" alt="arrow"></li>
+                            <li><img src="./assets/images/Tool.svg" alt="tool"><a class="menu-item" data-menu="menu3" href="">Nástroje</a><img class="arrow" src="./assets/images/Icons.svg" alt="arrow"></li>
+                            <li><img src="./assets/images/Help.svg" alt="help"><a class="menu-item" data-menu="menu2" href="">Nápoveda</a><img class="arrow" src="./assets/images/Icons.svg" alt="arrow"></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
         </header>
 
 

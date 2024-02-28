@@ -26,6 +26,10 @@ $entGray: #f2f2f4;
     display: none;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: $atlanticBlack;
@@ -374,6 +378,11 @@ header {
         }
 
         .mobile-menu {
+            position: fixed;
+
+            background-color: $simpleWhite;
+            z-index: 999;
+
             header::before {
                 background: none;
             }
@@ -393,13 +402,14 @@ header {
 
             .search {
                 padding: 0.3em;
-                padding-top: 1.5em;
+                padding-top: 1.8em;
                 margin-left: 0.5em;
                 padding-right: 0;
                 margin-right: 0;
+                width: 100vw;
 
                 .circle {
-                    width: 33px;
+                    width: 32px;
                 }
             }
 
@@ -413,6 +423,8 @@ header {
                 height: 60px;
                 box-shadow: 0 8px 20px $entGray;
 
+                background: linear-gradient(to right, $simpleWhite 0%, $simpleWhite 100%);
+
                 h2 {
                     font-size: 1em;
                     padding-left: 0.5em;
@@ -422,8 +434,52 @@ header {
                 img {
                     width: 30px;
                     height: 30px;
-                    transform: rotate(45deg) translateX(-10px);
+                    transform: rotate(45deg) translateX(-10px) translateY(7px);
                     cursor: pointer;
+                }
+            }
+
+            .mobile-menu-items {
+                ul {
+                    font-size: 0.95em;
+                    display: flex;
+                    padding: 2em;
+                    padding-top: 1em;
+                    padding-right: 0.5em;
+                    padding-left: 1.5em;
+                    width: 100vw;
+                    li {
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1em;
+                        width: 100%;
+                        padding-top: 1.7em;
+                        padding-bottom: 1.7em;
+                        border-radius: 0;
+                        border-bottom: 1px solid darken($entGray, 10%);
+
+                        &:last-child {
+                            border: none;
+                        }
+
+                        a {
+                            margin-right: auto;
+                        }
+
+                        .arrow {
+                            transform: rotate(-90deg);
+                            width: 16px;
+                            height: 16px;
+                            margin-left: 5em;
+                        }
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
                 }
             }
         }
